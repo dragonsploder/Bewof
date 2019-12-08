@@ -1,0 +1,6 @@
+#define F(v,h)for(v=0;v<h;v++)
+#define I F(y,22)F(x,80)
+#define U M[y][x]
+#define R rand()%
+#define Z 106>U&U>96 
+M[22][80],y,x,Y,X,c,t,m,h=20,r,i,l,T,W,H;S(){r=0;I r+=Z?1:0;i=r?1:printf("Score:%i\n",(m*10)-t+(h*10)),0;}L(){l=t;while(U!=46){x=R 80;y=R 22;};U=64;M[Y][X]=46;Y=y;X=x;}main(int a,char*A[]){F(i,a){r=*A[i];r==84?T=1:r==72?H=1:r==87?W=1:0;};srand(time(0));initscr();I U=35;y=11;x=40;F(i,2000){U=R 20?46:97+R 8,m++;r=R 4;!r&y>1?y--:r==1&y<20?y++:r==2&x>1?x--:x<78?x++:0;}U=64;Y=y;X=x;do{I mvaddch(y,x,U);r=t>l+19;mvprintw(22,0,"Bewof\nHp:%i %c ",h,r?94:32);c=getch();t++;l+=!T;c==94&r?L():0;y=Y;x=X;F(r,2){c==119?r?W?U-=R 3+R 3:U--,U<97?U=46:0:y--:c==115?r?M[y+1][x]!=35?M[y+1][x]=U-9,U=46:0:y++:c==100?r?M[Y][X]=U-9,U=64,X++:x++:c==97?r?M[Y-2][X]!=35&Y>1?M[Y-2][X]=U-9,U=46:0:x--:0;r?0:U==46?M[Y][X]=46,U=64,X=x,Y=y:0;Z?0:r++;}I{Z&(H&(X-x>5|x-X>5|Y-y>5|y-Y>5)?0:1)?i=y,r=x,X==x?Y>y?i++:i--:Y==y?X>x?r++:r--:0,M[i][r]==46?M[i][r]=U-9,U=46:M[i][r]==64?h--:0:0;}I -9+Z-9?U+=9:0;S();}while(c!=81&h>0&i);endwin();S();}
