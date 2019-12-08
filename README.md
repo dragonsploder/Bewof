@@ -1,5 +1,5 @@
 # Bewof (1 kilobyte roguelike)
-![alt text](example.png "Logo Title Text 1")
+![alt text](Example.png "Logo Title Text 1")
 ### Overview
 Bewof is a simple roguelike which fits in one kilobyte (1024 bytes) of C source code.
 This project was inspired by [ZigClimb](http://flend.net/zigclimb/index.html)
@@ -7,6 +7,7 @@ This project was inspired by [ZigClimb](http://flend.net/zigclimb/index.html)
 Bewof should compile an any Unix based system (tested an MacOS)
 Bewof only requires [ncurses](https://www.gnu.org/software/ncurses/ncurses.html) to build, so make sure you have it installed.
 ```
+$git clone https://github.com/dragonsploder/Bewof.git
 $cd Bewof
 $gcc -w -lncurses -obewof bewof.c
 $./bewof
