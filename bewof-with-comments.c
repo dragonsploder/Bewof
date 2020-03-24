@@ -26,10 +26,10 @@ S(){
     r=0;
     I r+=Z?1:0; // For every tile, if there is a monster, increment r
     i=
-        r? // If r greater then 0, there was at least on monster
+        r? // If r greater then 0, there is at least one monster
             1 // "return" true
-        : // Else there were no monsters
-            printf("Score:%i\n",(m*10) - t + (h*10)), //Print score
+        : // Else there are no monsters
+            printf("Score:%i\n",(m*10) - t + (h*10)), // Print score
             0 // "return" false
         ;
 }
@@ -104,7 +104,7 @@ main(int a,char*A[]){
                     ;
     }
 
-    // Set player location at lost point of drunk walk
+    // Set player location at last point of drunk walk
     U=64; // Set tile to at-sign (@)
     Y=y; // Set player Y
     X=x; // Set player X
@@ -233,7 +233,7 @@ main(int a,char*A[]){
                             M[i][r]=U-9, // Apply move flage
                             U=46 // Empty (.) old tile 
                         :
-                            M[i][r]==64? // If the next tile is empty
+                            M[i][r]==64? // If the next tile is the player (@)
                                 h-- // Remove one hp
                             :
                                 0
