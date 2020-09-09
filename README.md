@@ -12,6 +12,11 @@ $cd Bewof
 $gcc -w -lncurses -obewof bewof.c
 $./bewof
 ```
+
+Note it is also possible to compile on windows (tested with mingw) with [pdcurses](https://pdcurses.org/). For this to work you must also link pdcurses in the code:
+```
+#include <pdcurses.h> // Or whatever header file you got for pdcurses
+```
 ### Play
 In Bewof, you are the at sign (@).
 The base game of Bewof uses the wasd keys to move, Q to quit, and any other key to wait
