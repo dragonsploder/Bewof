@@ -19,7 +19,7 @@
  * W: 2d3 weapon toggle
  * H: Sneak toggle
  */
-M[22][80],y,x,Y,X,c,t,m,h=20,r,i,l,T,W,H;
+M[22][80],y,x,Y,X,c,t=0,m=0,h=20,r,i,l,T,W,H;
 
 // Function which checks if game is over (stores value in i), and if so, prints out the score
 S(){
@@ -250,6 +250,4 @@ main(int a,char*A[]){
 
     // End ncurses 
     endwin();
-    // Print score
-    S();
 }
